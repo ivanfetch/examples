@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# kubectl-gke-nodes
+# List GKE nodes with node pool name and Kubelet version.
+kubectl get nodes \
+-o jsonpath='{range .items[*]}{@.metadata.labels.cloud\.google\.com/gke-nodepool}{"\t"}{@.metadata.name}{"\t"}{@.status.nodeInfo.kubeletVersion}{"\n"}{end}'
