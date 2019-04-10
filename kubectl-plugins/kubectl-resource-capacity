@@ -1,0 +1,6 @@
+$ kubectl resource-capacity -u
+NODE                                           CPU REQUESTS    CPU LIMITS    CPU UTIL    MEMORY REQUESTS    MEMORY LIMITS    MEMORY UTIL
+*                                              2260m (37%)     365m (6%)     0m (0%)     1306Mi (11%)       1400Mi (12%)     0Mi (0%) 
+ip-172-20-40-125.us-east-2.compute.internal    910m (45%)      100m (5%)     0m (0%)     170Mi (4%)         120Mi (3%)       0Mi (0%) 
+ip-172-20-44-29.us-east-2.compute.internal     590m (29%)      15m (0%)      0m (0%)     470Mi (12%)        370Mi (9%)       0Mi (0%) 
+ip-172-20-46-29.us-east-2.compute.internal     760m (38%)      250m (12%)    0m (0%)     666Mi (17%)        910Mi (23%)      0Mi (0%) 

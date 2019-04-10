@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# kubectl-check-pdb
+# Display the namespace and pod disruption budgets less than 1.
+# This requires the jq command.
+#
+kubectl get pdb --all-namespaces -o json | \
+  jq -r '.items[] | select(.status.disruptionsAllowed<1) | [.metadata.namespace,.metadata.name] | join(" ")'

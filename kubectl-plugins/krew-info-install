@@ -1,0 +1,15 @@
+$ kubectl krew info resource-capacity
+NAME: resource-capacity
+URI: https://github.com/robscott/kube-capacity/releases/download/0.2.0/kube-capacity_0.2.0_Linux_x86_64.tar.gz
+SHA256: 0ed411af27884a54aa74c89d98ca327ce4a9c57bf759961f1db3af6c59c0f027
+DESCRIPTION: 
+A simple CLI that provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster.
+
+VERSION: v0.2.0
+```
+
+```
+$ kubectl krew install resource-capacity
+Updated the local copy of plugin index.
+Installing plugin: resource-capacity
+Installed plugin: resource-capacity

@@ -1,0 +1,5 @@
+$ kubectl krew update
+Updated the local copy of plugin index.
+$ kubectl krew search resource
+NAME              DESCRIPTION                                        STATUS
+resource-capacity Provides an overview of resource requests, limi... available
